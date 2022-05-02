@@ -1,0 +1,116 @@
+<div class="span9">
+  <div class="content">
+
+
+    <div id="convert" #content style="padding: 20px;background-color: white;">
+
+      <div
+        style="border: 1px solid #b55351;background-color: white;padding: 20px;margin-top: 20px;margin-bottom: 20px;margin-left: 20px;margin-right: 20px;">
+        <br>
+        <table style="width: 100%;background-color: white;">
+          <tr>
+            <td><img class="main-logo" src="./assets/images/logo.jpg" alt="" />
+
+            </td>
+            <td colspan="2" style="text-align: right;color: #b55351;font-size: 18px;">Invoice number:
+              {{billno}}<br>Invoice
+              Date:{{currentdate | date:'dd-MM-yyyy'}}
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <br>
+              <hr>
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td style="width:48%;border: 1px solid #b55351;padding: 20px;text-align: left;">
+
+              <span style="color: #b55351;font-size: 18px;"> VBN Ventures Private Limited</span><br>
+              CIN:U74140GJ2021PTC122571<br>
+              101,Sumit-2,Near Shaligram-2,<br>Opp Reliance Petrol Pump,<br>
+              Vastrapur,Ahmedabad,<br>Gujarat,380015<br> Email:connect@vbnnetwork.in
+              <br>GST Reg. No:24AAICV0647D1ZK
+
+            </td>
+            <td>&nbsp;</td>
+            <td style="width:48%;border: 1px solid #b55351;padding: 20px;text-align: left;">
+
+              <span style="color: #b55351;font-size: 18px;"> To,</span><br>
+              {{member_name}}<br>{{company_name}}<br>
+              {{mainaddress}}<br>GST Reg. No: {{gstnumber}}
+
+            </td>
+
+          </tr>
+          <tr>
+
+            <td colspan="3">
+              <br>
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+
+                    <th style="background-color: #b55351;color: white;" scope="col">Particulars</th>
+                    <th style="background-color: #b55351;color: white;text-align: right;" scope="col">SAC</th>
+                    <th style="background-color: #b55351;color: white;text-align: right;" scope="col">Amount (Rs)</th>
+                  </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Meeting Fees </td>
+                    <td style="text-align: right;">998312</td>
+                    <td style="text-align: right;">{{amount1}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="text-align: right;">CGST @ 9%</td>
+                    <td style="text-align: right;">{{cgstamount}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="text-align: right;">SGST @ 9%</td>
+                    <td style="text-align: right;">{{sgstamount}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" rowspan="2" style="text-align: right;">Total</td>
+                    <td rowspan="2" style="text-align: right;">{{total}}</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right;" colspan="3">Payment Received</td>
+          </tr>
+          <tr>
+            <td colspan="3">PAN No:AAICV0647D</td>
+          </tr>
+          <br>
+          <tr>
+            <td colspan="3">All Payments are non refundable and non transferrable.</td>
+          </tr>
+          <br>
+          <tr>
+            <td colspan="3" style="text-align: center;">This is a computer generated Invoice,Hence no Signature or Stamp
+              Required</td>
+          </tr>
+
+        </table><br><br><br><br>
+
+
+        <!-- <hr /> -->
+
+
+
+      </div>
+    </div>
+  </div>
+  <!--/.content-->
+
+</div>
